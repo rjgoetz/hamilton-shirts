@@ -7,8 +7,9 @@ v2.0
 $mobile-lg: 415px;
 $tablet-sm: 600px;
 $tablet: 768px;
-$tablet-lg: 1024px;
+$desktop-sm: 1024px;
 $desktop: 1366px;
+$desktop-lg: 1600px;
 
 // Left / Right Padding
 $pad: 15px;
@@ -328,7 +329,7 @@ div[class*="col-"] {
   .col-offset-sm2-0 {
     margin-left: 0;
   }
-  
+
   .col-sm2-1 {
     width: (1/12)*100%;
   }
@@ -422,8 +423,107 @@ div[class*="col-"] {
   }
 }
 
-/* Tablet Large Grid */
-@media screen and (min-width: $tablet-lg) {
+/* Desktop Small */
+@media screen and (min-width: $desktop-sm) {
+  .col-md-1 {
+    width: (1/12)*100%;
+  }
+
+  .col-offset-md-1 {
+    margin-left: (1/12)*100%;
+  }
+
+  .col-md-2 {
+    width: (2/12)*100%;
+  }
+
+  .col-offset-md-2 {
+    margin-left: (2/12)*100%;
+  }
+
+  .col-md-3 {
+    width: (3/12)*100%;
+  }
+
+  .col-offset-md-3 {
+    margin-left: (3/12)*100%;
+  }
+
+  .col-md-4 {
+    width: (4/12)*100%;
+  }
+
+  .col-offset-md-4 {
+    margin-left: (4/12)*100%;
+  }
+
+  .col-md-5 {
+    width: (5/12)*100%;
+  }
+
+  .col-offset-md-5 {
+    margin-left: (5/12)*100%;
+  }
+
+  .col-md-6 {
+    width: (6/12)*100%;
+  }
+
+  .col-offset-md-6 {
+    margin-left: (6/12)*100%;
+  }
+
+  .col-md-7 {
+    width: (7/12)*100%;
+  }
+
+  .col-offset-md-7 {
+    margin-left: (7/12)*100%;
+  }
+
+  .col-md-8 {
+    width: (8/12)*100%;
+  }
+
+  .col-offset-md-8 {
+    margin-left: (8/12)*100%;
+  }
+
+  .col-md-9 {
+    width: (9/12)*100%;
+  }
+
+  .col-offset-md-9 {
+    margin-left: (9/12)*100%;
+  }
+
+  .col-md-10 {
+    width: (10/12)*100%;
+  }
+
+  .col-offset-md-10 {
+    margin-left: (10/12)*100%;
+  }
+
+  .col-md-11 {
+    width: (11/12)*100%;
+  }
+
+  .col-offset-md-11 {
+    margin-left: (11/12)*100%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Desktop Grid */
+@media screen and (min-width: $desktop) {
+  .col-offset-lg-0 {
+    margin-left: 0;
+  }
+
   .col-lg-1 {
     width: (1/12)*100%;
   }
@@ -517,8 +617,12 @@ div[class*="col-"] {
   }
 }
 
-/* Desktop Grid */
-@media screen and (min-width: $desktop) {
+/* Desktop Large Grid */
+@media screen and (min-width: $desktop-lg) {
+  .col-offset-xl-0 {
+    margin-left: 0;
+  }
+
   .col-xl-1 {
     width: (1/12)*100%;
   }

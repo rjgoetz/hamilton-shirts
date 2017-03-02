@@ -1,0 +1,110 @@
+@media screen and (min-width: $desktop-sm) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    position: relative;
+  }
+
+  header {
+    @include padding(2, 0);
+    background-color: $lt-grey;
+    box-shadow: inset -5px 0px 20px -10px $dk-grey;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: (1/4)*100%;
+  }
+
+  main {
+    @include padding(0, 3);
+    height: 100%;
+  }
+
+  .l-vis-desktop {
+    display: block;
+  }
+  
+  .l-vis-desktop-inline {
+    display: inline;
+  }
+
+  .l-hide-desktop {
+    display: none;
+  }
+
+  .logo {
+    background-position: top center;
+    float: initial;
+    height: $base-line-height*4+rem;
+    margin: auto;
+    width: 80%;
+  }
+
+  .top-nav {
+    @include padding(2, 0);
+    ul {
+      @include baseline((24/$base-font-size), 'sm');
+    }
+    li {
+      @include padding(1, 1);
+      float: initial;
+      width: 100%;
+      &:nth-of-type(2) {
+        width: 100%;
+      }
+      &:last-of-type {
+        width: 100%;
+      }
+    }
+    a {
+      color: $dk-brown;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  .option-box {
+    @include padding(0, 0);
+    margin-top: 3*$base-line-height+rem;
+  }
+
+  .order-shirt {
+    @include padding(3, 0);
+  }
+
+  .footer-links {
+    @include padding(0, 1);
+    position: absolute;
+    bottom: 0;
+    left: $pad;
+    right: $pad;
+    p {
+      color: $dk-grey;
+      font-weight: 700;
+      text-align: center;
+    }
+    .lead {
+      @include baseline((20/$base-font-size), 'sm');
+      font-weight: 300;
+    }
+  }
+
+  .footer-nav {
+    @include padding(4, 2);
+    a {
+      @include padding(0.5, 0.5);
+      color: $dk-brown;
+      display: block;
+      &:hover {
+        color: $blue;
+      }
+    }
+    li {
+      border-top: 1px solid $lt-brown;
+    }
+  }
+
+}

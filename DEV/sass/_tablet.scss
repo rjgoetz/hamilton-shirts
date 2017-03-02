@@ -1,7 +1,19 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   header {
     @include padding(1, 1);
     position: relative;
+  }
+
+  h2 {
+    @include baseline((30/$base-font-size), 'lg');
+  }
+
+  h3 {
+    @include baseline((24/$base-font-size), 'sm');
+  }
+
+  .footer-nav {
+    @include baseline((18/$base-font-size), 'sm');
   }
 
   .logo {
@@ -19,7 +31,10 @@
   }
 
   .top-nav {
-    padding-top: 1.25rem;
+    padding-top: 1.5rem;
+    ul {
+      @include baseline((18/$base-font-size), 'sm');
+    }
     li {
       width: 20%;
       &:nth-of-type(2) {
@@ -29,6 +44,10 @@
         width: 15%;
       }
     }
+  }
+
+  .sub-nav {
+    @include baseline((18/$base-font-size), 'sm');
   }
 
   .option-box, .order-shirt {

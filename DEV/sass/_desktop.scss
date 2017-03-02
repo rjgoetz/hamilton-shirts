@@ -1,0 +1,11 @@
+@media screen and (min-width: $desktop) {
+  header {
+    min-height: 1200px;
+    width: (1/5)*100%;
+  }
+
+  h2 {
+    @include baseline((36/$base-font-size), 'sm');
+  }
+
+}

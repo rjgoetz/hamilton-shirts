@@ -1,4 +1,4 @@
-@media screen and (min-width: 415px) {
+@media screen and (min-width: $mobile-lg) {
 
   .custom-shirt {
     @include padding(2, 1);

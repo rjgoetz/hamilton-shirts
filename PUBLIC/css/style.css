@@ -714,8 +714,81 @@ div[class*="col-"] {
 
   .col-sm2-12 {
     width: 100%; } }
-/* Tablet Large Grid */
+/* Desktop Small */
 @media screen and (min-width: 1024px) {
+  .col-md-1 {
+    width: 8.33333%; }
+
+  .col-offset-md-1 {
+    margin-left: 8.33333%; }
+
+  .col-md-2 {
+    width: 16.66667%; }
+
+  .col-offset-md-2 {
+    margin-left: 16.66667%; }
+
+  .col-md-3 {
+    width: 25%; }
+
+  .col-offset-md-3 {
+    margin-left: 25%; }
+
+  .col-md-4 {
+    width: 33.33333%; }
+
+  .col-offset-md-4 {
+    margin-left: 33.33333%; }
+
+  .col-md-5 {
+    width: 41.66667%; }
+
+  .col-offset-md-5 {
+    margin-left: 41.66667%; }
+
+  .col-md-6 {
+    width: 50%; }
+
+  .col-offset-md-6 {
+    margin-left: 50%; }
+
+  .col-md-7 {
+    width: 58.33333%; }
+
+  .col-offset-md-7 {
+    margin-left: 58.33333%; }
+
+  .col-md-8 {
+    width: 66.66667%; }
+
+  .col-offset-md-8 {
+    margin-left: 66.66667%; }
+
+  .col-md-9 {
+    width: 75%; }
+
+  .col-offset-md-9 {
+    margin-left: 75%; }
+
+  .col-md-10 {
+    width: 83.33333%; }
+
+  .col-offset-md-10 {
+    margin-left: 83.33333%; }
+
+  .col-md-11 {
+    width: 91.66667%; }
+
+  .col-offset-md-11 {
+    margin-left: 91.66667%; }
+
+  .col-md-12 {
+    width: 100%; } }
+/* Desktop Grid */
+@media screen and (min-width: 1366px) {
+  .col-offset-lg-0 {
+    margin-left: 0; }
+
   .col-lg-1 {
     width: 8.33333%; }
 
@@ -784,8 +857,11 @@ div[class*="col-"] {
 
   .col-lg-12 {
     width: 100%; } }
-/* Desktop Grid */
-@media screen and (min-width: 1366px) {
+/* Desktop Large Grid */
+@media screen and (min-width: 1600px) {
+  .col-offset-xl-0 {
+    margin-left: 0; }
+
   .col-xl-1 {
     width: 8.33333%; }
 
@@ -963,6 +1039,12 @@ ul {
 a {
   color: #757575;
   text-decoration: none; }
+
+.l-vis-desktop {
+  display: none; }
+
+.l-vis-desktop-inline {
+  display: none; }
 
 .logo {
   background: url("../img/hamilton-logo-no-tag.png") no-repeat left center;
@@ -1156,6 +1238,24 @@ footer {
     padding-top: 1.5rem;
     position: relative; }
 
+  h2 {
+    font-size: 1.875em;
+    line-height: 1.6;
+    margin-bottom: -0.425em;
+    margin-top: 0.425em; }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: -0.05em;
+    margin-top: 0.05em; }
+
+  .footer-nav {
+    font-size: 1.125em;
+    line-height: 1.33333;
+    margin-bottom: -0.21667em;
+    margin-top: 0.21667em; }
+
   .logo {
     height: 4.5rem; }
 
@@ -1171,7 +1271,12 @@ footer {
     margin-top: 0.25588em; }
 
   .top-nav {
-    padding-top: 1.25rem; }
+    padding-top: 1.5rem; }
+    .top-nav ul {
+      font-size: 1.125em;
+      line-height: 1.33333;
+      margin-bottom: -0.21667em;
+      margin-top: 0.21667em; }
     .top-nav li {
       width: 20%; }
       .top-nav li:nth-of-type(2) {
@@ -1179,8 +1284,129 @@ footer {
       .top-nav li:last-of-type {
         width: 15%; }
 
+  .sub-nav {
+    font-size: 1.125em;
+    line-height: 1.33333;
+    margin-bottom: -0.21667em;
+    margin-top: 0.21667em; }
+
   .option-box, .order-shirt {
     padding-bottom: 0rem;
     padding-top: 3rem; } }
+@media screen and (min-width: 1024px) {
+  html {
+    height: 100%; }
+
+  body {
+    position: relative; }
+
+  header {
+    padding-bottom: 0rem;
+    padding-top: 3rem;
+    background-color: #EEEEEE;
+    box-shadow: inset -5px 0px 20px -10px #757575;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 25%; }
+
+  main {
+    padding-bottom: 4.5rem;
+    padding-top: 0rem;
+    height: 100%; }
+
+  .l-vis-desktop {
+    display: block; }
+
+  .l-vis-desktop-inline {
+    display: inline; }
+
+  .l-hide-desktop {
+    display: none; }
+
+  .logo {
+    background-position: top center;
+    float: initial;
+    height: 6rem;
+    margin: auto;
+    width: 80%; }
+
+  .top-nav {
+    padding-bottom: 0rem;
+    padding-top: 3rem; }
+    .top-nav ul {
+      font-size: 1.5em;
+      line-height: 1;
+      margin-bottom: -0.05em;
+      margin-top: 0.05em; }
+    .top-nav li {
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+      float: initial;
+      width: 100%; }
+      .top-nav li:nth-of-type(2) {
+        width: 100%; }
+      .top-nav li:last-of-type {
+        width: 100%; }
+    .top-nav a {
+      color: #5D4037; }
+      .top-nav a:hover {
+        color: #6DAFE1; }
+
+  .option-box {
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    margin-top: 4.5rem; }
+
+  .order-shirt {
+    padding-bottom: 0rem;
+    padding-top: 4.5rem; }
+
+  .footer-links {
+    padding-bottom: 1.5rem;
+    padding-top: 0rem;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px; }
+    .footer-links p {
+      color: #757575;
+      font-weight: 700;
+      text-align: center; }
+    .footer-links .lead {
+      font-size: 1.25em;
+      line-height: 1.2;
+      margin-bottom: -0.15em;
+      margin-top: 0.15em;
+      font-weight: 300; }
+
+  .footer-nav {
+    padding-bottom: 3rem;
+    padding-top: 6rem; }
+    .footer-nav a {
+      padding-bottom: 0.75rem;
+      padding-top: 0.75rem;
+      color: #5D4037;
+      display: block; }
+      .footer-nav a:hover {
+        color: #6DAFE1; }
+    .footer-nav li {
+      border-top: 1px solid #D7CCC8; } }
+@media screen and (min-width: 1366px) {
+  header {
+    min-height: 1200px;
+    width: 20%; }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.33333;
+    margin-bottom: -0.21667em;
+    margin-top: 0.21667em; } }
+@media screen and (min-width: 1600px) {
+  body {
+    height: 100%; }
+
+  header {
+    width: 15%; } }
 
 /*# sourceMappingURL=style.css.map */
