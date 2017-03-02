@@ -1,0 +1,5 @@
+@media screen and (min-width: 600px) {
+  .order-shirt {
+    @include padding(0, 0);
+  }
+}

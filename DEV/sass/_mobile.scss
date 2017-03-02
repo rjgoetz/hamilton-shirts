@@ -32,8 +32,10 @@ h2 {
 }
 
 h3 {
-  margin: 0;
-  @include baseline(1, 'sm');
+  @include baseline((18/$base-font-size), 'sm');
+  border-bottom: 1px solid $lt-grey;
+  font-weight: 300;
+  color: $dk-brown;
 }
 
 p {
@@ -88,7 +90,7 @@ a {
 }
 
 .button {
-  @include padding(0.5, 0.5);
+  @include padding(0.35, 0.35);
   @include baseline(1, 'sm');
   background-color: $blue;
   box-shadow: 0px 4px 10px -3px $lt-grey;
@@ -136,8 +138,8 @@ a {
 }
 
 .order-shirt {
-  @include padding(1, 1);
-  h2 {
+  @include padding(2, 0);
+  h3 {
     @include padding(0, 0.2);
   }
 }

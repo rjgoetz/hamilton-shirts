@@ -1,6 +1,6 @@
 @media screen and (min-width: 415px) {
 
-  .custom-shirt, .order-shirt {
+  .custom-shirt {
     @include padding(2, 1);
   }
 
