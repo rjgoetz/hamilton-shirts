@@ -1,0 +1,15 @@
+@media screen and (min-width: 415px) {
+
+  .custom-shirt, .order-shirt {
+    @include padding(2, 1);
+  }
+
+  footer {
+    @include padding(1, 1);
+    p {
+      @include padding(1, 0);
+      text-align: center;
+    }
+  }
+
+}

@@ -126,8 +126,9 @@ a {
 }
 
 .custom-shirt {
+  @include padding(1, 1);
   h2 {
-    @include padding(1, 0.2);
+    @include padding(0, 0.2);
   }
   img {
     margin: $base-line-height*0.8+em 0 $base-line-height+em;
@@ -135,8 +136,9 @@ a {
 }
 
 .order-shirt {
+  @include padding(1, 1);
   h2 {
-    @include padding(1, 0.2);
+    @include padding(0, 0.2);
   }
 }
 
@@ -145,6 +147,9 @@ a {
   width: 100%;
   tr {
     td {
+      min-height: 1*$base-line-height+em;
+      vertical-align: top;
+
       &:first-of-type {
         font-weight: 700;
         width: 45%;
@@ -201,6 +206,11 @@ footer {
     color: $dk-brown;
     display: block;
     width: 100%;
+  }
+  li:last-of-type {
+    a {
+      border-bottom: 1px solid $lt-brown;
+    }
   }
   p {
     @include baseline((14/$base-font-size), 'sm');

@@ -499,7 +499,7 @@ div[class*="col-"] {
   width: 100%; }
 
 /* Mobile Large Grid */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 415px) {
   .col-sm-1 {
     width: 8.33333%; }
 
@@ -957,25 +957,34 @@ a {
   .top-nav .active {
     font-weight: 600; }
 
-.custom-shirt h2 {
-  padding-bottom: 0.3rem;
+.custom-shirt {
+  padding-bottom: 1.5rem;
   padding-top: 1.5rem; }
-.custom-shirt img {
-  margin: 1.2em 0 1.5em; }
+  .custom-shirt h2 {
+    padding-bottom: 0.3rem;
+    padding-top: 0rem; }
+  .custom-shirt img {
+    margin: 1.2em 0 1.5em; }
 
-.order-shirt h2 {
-  padding-bottom: 0.3rem;
+.order-shirt {
+  padding-bottom: 1.5rem;
   padding-top: 1.5rem; }
+  .order-shirt h2 {
+    padding-bottom: 0.3rem;
+    padding-top: 0rem; }
 
 .sku-info {
   padding-bottom: 0rem;
   padding-top: 1.5rem;
   width: 100%; }
-  .sku-info tr td:first-of-type {
-    font-weight: 700;
-    width: 45%; }
-  .sku-info tr td:last-of-type {
-    width: 55%; }
+  .sku-info tr td {
+    min-height: 1.5em;
+    vertical-align: top; }
+    .sku-info tr td:first-of-type {
+      font-weight: 700;
+      width: 45%; }
+    .sku-info tr td:last-of-type {
+      width: 55%; }
 
 .sub-nav ul {
   font-size: 0.875em;
@@ -1018,6 +1027,8 @@ footer {
     color: #5D4037;
     display: block;
     width: 100%; }
+  footer li:last-of-type a {
+    border-bottom: 1px solid #D7CCC8; }
   footer p {
     font-size: 0.875em;
     line-height: 1.71429;
@@ -1040,5 +1051,18 @@ footer {
 .footer-nav {
   padding-bottom: 0rem;
   padding-top: 1.5rem; }
+
+@media screen and (min-width: 415px) {
+  .custom-shirt, .order-shirt {
+    padding-bottom: 1.5rem;
+    padding-top: 3rem; }
+
+  footer {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem; }
+    footer p {
+      padding-bottom: 0rem;
+      padding-top: 1.5rem;
+      text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
