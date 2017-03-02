@@ -15,6 +15,11 @@ body {
   line-height: $base-line-height;
 }
 
+header {
+  @include padding(1, 0);
+  box-shadow: 0px 4px 10px -3px $lt-grey;
+}
+
 h1, h2, ul, p {
   margin: 0;
   @include padding(0, 1);
@@ -102,7 +107,6 @@ a {
 
 .top-nav {
   @include padding(0.5, 0.5);
-  box-shadow: 0px 4px 10px -3px $lt-grey;
   ul {
     @include baseline((14/$base-font-size), 'sm');
   }

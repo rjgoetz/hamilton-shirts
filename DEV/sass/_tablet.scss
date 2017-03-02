@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+  header {
+    @include padding(1, 1);
+    position: relative;
+  }
+
+  .logo {
+    height: $base-line-height*3+rem;
+  }
+
+  .my-account {
+    position: absolute;
+    top: 30px;
+    right: $pad;
+  }
+
+  .user-icon {
+    @include baseline((34/$base-font-size), 'sm');
+  }
+
+  .top-nav {
+    padding-top: 1.25rem;
+    li {
+      width: 20%;
+      &:nth-of-type(2) {
+        width: 25%;
+      }
+      &:last-of-type {
+        width: 15%;
+      }
+    }
+  }
+
+  .option-box, .order-shirt {
+    @include padding(2, 0);
+  }
+
+}

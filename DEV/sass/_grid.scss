@@ -10,6 +10,9 @@ $tablet: 768px;
 $tablet-lg: 1024px;
 $desktop: 1366px;
 
+// Left / Right Padding
+$pad: 15px;
+
 /* Use .container when outside padding is desired */
 .container {
   padding-left: $pad;
@@ -322,95 +325,99 @@ div[class*="col-"] {
 
 /* Tablet Grid */
 @media screen and (min-width: $tablet) {
-  .col-md-1 {
+  .col-offset-sm2-0 {
+    margin-left: 0;
+  }
+  
+  .col-sm2-1 {
     width: (1/12)*100%;
   }
 
-  .col-offset-md-1 {
+  .col-offset-sm2-1 {
     margin-left: (1/12)*100%;
   }
 
-  .col-md-2 {
+  .col-sm2-2 {
     width: (2/12)*100%;
   }
 
-  .col-offset-md-2 {
+  .col-offset-sm2-2 {
     margin-left: (2/12)*100%;
   }
 
-  .col-md-3 {
+  .col-sm2-3 {
     width: (3/12)*100%;
   }
 
-  .col-offset-md-3 {
+  .col-offset-sm2-3 {
     margin-left: (3/12)*100%;
   }
 
-  .col-md-4 {
+  .col-sm2-4 {
     width: (4/12)*100%;
   }
 
-  .col-offset-md-4 {
+  .col-offset-sm2-4 {
     margin-left: (4/12)*100%;
   }
 
-  .col-md-5 {
+  .col-sm2-5 {
     width: (5/12)*100%;
   }
 
-  .col-offset-md-5 {
+  .col-offset-sm2-5 {
     margin-left: (5/12)*100%;
   }
 
-  .col-md-6 {
+  .col-sm2-6 {
     width: (6/12)*100%;
   }
 
-  .col-offset-md-6 {
+  .col-offset-sm2-6 {
     margin-left: (6/12)*100%;
   }
 
-  .col-md-7 {
+  .col-sm2-7 {
     width: (7/12)*100%;
   }
 
-  .col-offset-md-7 {
+  .col-offset-sm2-7 {
     margin-left: (7/12)*100%;
   }
 
-  .col-md-8 {
+  .col-sm2-8 {
     width: (8/12)*100%;
   }
 
-  .col-offset-md-8 {
+  .col-offset-sm2-8 {
     margin-left: (8/12)*100%;
   }
 
-  .col-md-9 {
+  .col-sm2-9 {
     width: (9/12)*100%;
   }
 
-  .col-offset-md-9 {
+  .col-offset-sm2-9 {
     margin-left: (9/12)*100%;
   }
 
-  .col-md-10 {
+  .col-sm2-10 {
     width: (10/12)*100%;
   }
 
-  .col-offset-md-10 {
+  .col-offset-sm2-10 {
     margin-left: (10/12)*100%;
   }
 
-  .col-md-11 {
+  .col-sm2-11 {
     width: (11/12)*100%;
   }
 
-  .col-offset-md-11 {
+  .col-offset-sm2-11 {
     margin-left: (11/12)*100%;
   }
 
-  .col-md-12 {
+  .col-sm2-12 {
     width: 100%;
   }
 }
