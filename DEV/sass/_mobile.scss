@@ -72,8 +72,12 @@ a {
 .arrow-icon {
   @include baseline((22/$base-font-size), 'sm');
   color: $md-brown;
-  float: right;
   margin: 0;
+}
+
+.arrow-icon-right {
+  @extend .arrow-icon;
+  float: right;
 }
 
 .search-icon {
@@ -81,6 +85,17 @@ a {
   color: $md-brown;
   float: right;
   margin: 0;
+}
+
+.button {
+  @include padding(0.5, 0.5);
+  @include baseline(1, 'sm');
+  background-color: $blue;
+  box-shadow: 0px 4px 10px -3px $lt-grey;
+  border-radius: 3px;
+  color: $white;
+  padding-left: $pad;
+  padding-right: $pad;
 }
 
 .top-nav {
@@ -122,6 +137,22 @@ a {
 .order-shirt {
   h2 {
     @include padding(1, 0.2);
+  }
+}
+
+.sku-info {
+  @include padding(1, 0);
+  width: 100%;
+  tr {
+    td {
+      &:first-of-type {
+        font-weight: 700;
+        width: 45%;
+      }
+      &:last-of-type {
+        width: 55%;
+      }
+    }
   }
 }
 
