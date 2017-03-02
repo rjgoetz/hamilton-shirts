@@ -1,0 +1,193 @@
+/*
+Mobile Styles
+*/
+
+
+// Base
+html {
+  font-size: $base-font-size+px;
+}
+
+body {
+  font-family: $base-font-stack;
+  font-size: inherit;
+  font-weight: 300;
+  line-height: $base-line-height;
+}
+
+h1, h2, ul, p {
+  margin: 0;
+  @include padding(0, 1);
+}
+
+h1 {
+  @include baseline((48/$base-font-size), 'lg');
+}
+
+h2 {
+  @include baseline((24/$base-font-size), 'lg');
+  font-weight: 300;
+  border-bottom: 1px solid $lt-grey;
+  color: $dk-grey;
+}
+
+h3 {
+  margin: 0;
+  @include baseline(1, 'sm');
+}
+
+p {
+  @include baseline(1, 'sm');
+}
+
+ul {
+  @include baseline(1, 'sm');
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  color: $dk-grey;
+  text-decoration: none;
+}
+
+// Modules
+.logo {
+  background: url('../img/hamilton-logo-no-tag.png') no-repeat left center;
+  background-size: contain;
+  float: left;
+  margin: 0;
+  padding-bottom: 0;
+  height: $base-line-height*2+rem;
+  width: 100%;
+}
+
+.user-icon {
+  @include baseline((28/$base-font-size), 'sm');
+  color: $md-grey;
+  float: right;
+  margin: 0;
+}
+
+.arrow-icon {
+  @include baseline((22/$base-font-size), 'sm');
+  color: $md-brown;
+  float: right;
+  margin: 0;
+}
+
+.search-icon {
+  @include baseline((22/$base-font-size), 'sm');
+  color: $md-brown;
+  float: right;
+  margin: 0;
+}
+
+.top-nav {
+  @include padding(0.5, 0.5);
+  box-shadow: 0px 4px 10px -3px $lt-grey;
+  ul {
+    @include baseline((14/$base-font-size), 'sm');
+  }
+  li {
+    float: left;
+    text-align: center;
+    width: 20%;
+    &:nth-of-type(2) {
+      width: 30%;
+    }
+    &:last-of-type {
+      width: 10%;
+    }
+  }
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .active {
+    font-weight: 600;
+  }
+}
+
+.custom-shirt {
+  h2 {
+    @include padding(1, 0.2);
+  }
+  img {
+    margin: $base-line-height*0.8+em 0 $base-line-height+em;
+  }
+}
+
+.order-shirt {
+  h2 {
+    @include padding(1, 0.2);
+  }
+}
+
+
+.sub-nav {
+  ul {
+    @include baseline((14/$base-font-size), 'sm');
+  }
+  li {
+    background-color: $lt-brown;
+    box-shadow:inset 2px -2px 2px 0px rgba($md-brown, 0.25);
+    float: left;
+    text-align: center;
+    width: 30%;
+    &:last-of-type {
+      box-shadow:inset 0px -2px 4px 0px rgba($md-brown, 0.25);
+      width: 40%;
+    }
+  }
+  a {
+    @include padding(0.5, 0.5);
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .active {
+    background-color: $md-brown;
+    color: $white;
+  }
+}
+
+.option-box {
+  box-shadow: 0px 4px 10px -3px $lt-grey;
+  .box-content {
+    @include padding(2, 1);
+  }
+}
+
+footer {
+  background-color: $lt-grey;
+  box-shadow: 0px 0px 10px -1px $md-grey;
+  margin-top: 2*$base-line-height+em;
+  a {
+    @include padding(0.5, 0.5);
+    border-top: 1px solid $lt-brown;
+    color: $dk-brown;
+    display: block;
+    width: 100%;
+  }
+  p {
+    @include baseline((14/$base-font-size), 'sm');
+    color: $dk-grey;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+}
+
+.lead {
+  @include baseline((18/$base-font-size), 'sm');
+  color: $dk-grey;
+  font-weight: 300;
+  span {
+    display: block;
+  }
+}
+
+.footer-nav {
+  @include padding(1, 0);
+}
