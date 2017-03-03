@@ -25,7 +25,7 @@
   .l-vis-desktop {
     display: block;
   }
-  
+
   .l-vis-desktop-inline {
     display: inline;
   }
@@ -45,7 +45,7 @@
   .top-nav {
     @include padding(2, 0);
     ul {
-      @include baseline((24/$base-font-size), 'sm');
+      @include baseline((22/$base-font-size), 'sm');
     }
     li {
       @include padding(1, 1);
@@ -87,7 +87,7 @@
       text-align: center;
     }
     .lead {
-      @include baseline((20/$base-font-size), 'sm');
+      @include baseline((18/$base-font-size), 'sm');
       font-weight: 300;
     }
   }
@@ -100,10 +100,18 @@
       display: block;
       &:hover {
         color: $blue;
+        i {
+          color: $blue;
+        }
       }
     }
     li {
       border-top: 1px solid $lt-brown;
+      &:last-of-type {
+        a {
+          border-bottom: 1px solid $lt-brown;
+        }
+      }
     }
   }
 

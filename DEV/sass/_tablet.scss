@@ -54,4 +54,8 @@
     @include padding(2, 0);
   }
 
+  .button:hover {
+    background-color: $dk-blue;
+  }
+
 }
